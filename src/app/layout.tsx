@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Create Next App',
-  description: 'by Generated create next app',
+  title: 'Edioscribe',
+  description: 'Edioscribe is a transcription service powered by nextjs and deepgram.easy and fast transcribing, transcription of audio',
 }
 
 export default function RootLayout({

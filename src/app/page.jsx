@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       >
         Start Transcribing
       </Link>
+     
     </div>
   )
 }
