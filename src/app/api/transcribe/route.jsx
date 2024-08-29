@@ -1,6 +1,8 @@
 import { createClient } from '@deepgram/sdk';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(request) {
   const formData = await request.formData();
   const file = formData.get('audio');
@@ -37,9 +39,3 @@ export async function POST(request) {
     return NextResponse.json({ error: 'An error occurred during transcription' }, { status: 500 });
   }
 }
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
